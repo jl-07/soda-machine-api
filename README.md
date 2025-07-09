@@ -1,4 +1,12 @@
-# Smart Vending Machine System with AI
+# 🥤 Smart Vending Machine API (AI-Powered)
+
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+An AI-powered soda vending machine backend that understands natural language requests using OpenAI + Instructor.
+
+> Built with FastAPI, SQLModel, OpenAI, Docker, and more.
 
 This project implements a backend system for an intelligent vending machine, leveraging FastAPI for the API, SQLModel for database management (SQLite), and `instructor` to interact with OpenAI's Large Language Models (LLMs) for natural language processing.
 

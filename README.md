@@ -185,15 +185,6 @@ One of the main challenges during development was the robust integration with th
 * **Importing `OpenAIError`:** To specifically catch exceptions from the OpenAI library.
 * **Detailed Error Handling:** Implementing `try-except OpenAIError` blocks in routes that interact with the OpenAI API to extract and return the detailed error message from OpenAI to the API client, improving debugging and user experience. This ensures that, even without credits, the user receives a clear message about the issue.
 
-## Future Improvements
-
-* Authentication and Authorization: Implement security mechanisms for the API.
-* Enhanced Input Validation: More robust validation for user messages before sending them to the AI.
-* Integration with Other LLMs: Allow easy integration with different language models or providers.
-* AI Response Caching: To optimize costs and latency for repeated requests.
-* User Interface (Frontend): Develop a graphical interface to interact with the vending machine.
-* Monitoring and Logging: Implement a more advanced monitoring system for the application.
-
 ## Author
 
 **Júnior Lira**
@@ -381,15 +372,6 @@ Um dos principais desafios durante o desenvolvimento foi a integração robusta 
 
 * **Importar `OpenAIError`:** Para capturar especificamente exceções da biblioteca OpenAI.
 * **Tratamento Detalhado:** Implementar blocos `try-except OpenAIError` nas rotas que interagem com a API da OpenAI para extrair e retornar a mensagem de erro detalhada da OpenAI ao cliente da API, melhorando a depuração e a experiência do usuário. Isso garante que, mesmo sem créditos, o usuário receba uma mensagem clara sobre o problema.
-
-## Próximos Passos (Melhorias Futuras)
-
-* Autenticação e Autorização: Implementar mecanismos de segurança para a API.
-* Validação de Entrada Aprimorada: Mais validações para as mensagens do usuário antes de enviar para a IA.
-* Integração com Outros LLMs: Permitir a fácil integração com diferentes modelos de linguagem ou provedores.
-* Cache de Respostas da IA: Para otimizar custos e latência em requisições repetidas.
-* Interface do Usuário (Frontend): Desenvolver uma interface gráfica para interagir com a máquina de refrigerantes.
-* Monitoramento e Logs: Implementar um sistema de monitoramento mais avançado para a aplicação.
 
 ### **Roadmap para o Projeto da API da Máquina de Refrigerantes**
 

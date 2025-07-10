@@ -18,12 +18,11 @@ The main objective is to simulate user interaction with a vending machine throug
 * [Technologies Used](#technologies-used)
 * [Prerequisites](#prerequisites)
 * [Environment Setup](#environment-setup)
-* [Running the Application](#running-the-application)
     * [Locally (Python Virtual Env)](#locally-python-virtual-env)
     * [With Docker Compose](#with-docker-compose)
 * [API Endpoints](#api-endpoints)
 * [Challenges and Solutions](#challenges-and-solutions)
-* ## Detailed Roadmap
+* [Detailed Roadmap](#detailed-roadmap)
 * [Author](#author)
 
 ## Features
@@ -185,11 +184,9 @@ One of the main challenges during development was the robust integration with th
 * **Importing `OpenAIError`:** To specifically catch exceptions from the OpenAI library.
 * **Detailed Error Handling:** Implementing `try-except OpenAIError` blocks in routes that interact with the OpenAI API to extract and return the detailed error message from OpenAI to the API client, improving debugging and user experience. This ensures that, even without credits, the user receives a clear message about the issue.
 
-#### **English**
+## Detailed Roadmap
 
----
-
-## 🚀 Roadmap: Elevating the Soda Machine API
+Our objective is to transform the Soda Machine API into an even more robust, intelligent, and comprehensive solution. This roadmap details the next steps to enhance existing functionalities and explore new possibilities.
 
 ### 🌟 **AI Intelligence & Robustness Enhancements:**
 
@@ -202,20 +199,20 @@ One of the main challenges during development was the robust integration with th
 
 * **Comprehensive Inventory Management:** Implement CRUD (Create, Read, Update, Delete) endpoints for managing products and their respective stock levels via the API.
 * **Transaction History:** Develop functionality to record and retrieve all purchase transactions, including soda type, quantity, price, and date/time.
-* **Dynamic Soda Types:** Allow configuration of new soda types and their prices via the API, without requiring code changes.
+* **Dynamic Soda Types:** Allow configuration of new soda types and their prices through the API, without requiring code changes.
 * **Simulated Payment Integration:** Add a module to simulate a payment process, returning success or failure based on defined criteria.
 
 ### 🌐 **Expansion & Usability (Frontend & Deployment):**
 
 * **User Interface Development (Frontend):** Create an intuitive web or mobile application to visually interact with the Soda Machine, utilizing the API endpoints (addressing the backend-first prioritization).
-* **Production Deployment:** Deploy the API to a robust cloud environment (e.g., AWS, Azure, GCP) to provide a public link for real-time demonstration and interaction, validating its scalability and availability.
+* **Production Deployment:** Deploy the API to a robust cloud environment (ex: AWS, Azure, GCP) to provide a public link for demonstration and real-time interaction, validating its scalability and availability.
 * **Interactive Documentation:** Integrate tools like Swagger UI or ReDoc to provide interactive documentation of the API endpoints, facilitating exploration and testing for other developers.
 
 ### 🛡️ **Robustness & Engineering Best Practices:**
 
 * **Comprehensive Automated Tests:** Expand unit and integration test coverage for all API functionalities, ensuring code solidity and response reliability.
 * **Monitoring and Logging:** Implement a robust logging and monitoring system to track API performance, identify bottlenecks, and diagnose errors quickly.
-* **Security:** Add basic authentication and authorization for management endpoints (e.g., for inventory management).
+* **Security:** Add basic authentication and authorization for management endpoints (ex: for inventory management).
 
 ## Author
 
@@ -223,9 +220,8 @@ One of the main challenges during development was the robust integration with th
 * [LinkedIn](https://www.linkedin.com/in/juniorlirati/)
 * [GitHub](https://github.com/jl-07)
 
+---
 
-
- In portuguese language
 # Sistema de Máquina de Refrigerantes com IA
 
 Este projeto implementa um sistema de backend para uma máquina de refrigerantes inteligente, utilizando FastAPI para a API, SQLModel para gerenciamento do banco de dados (SQLite) e `instructor` para interagir com modelos de Linguagem Grande (LLMs) da OpenAI para processamento de linguagem natural.
@@ -243,7 +239,7 @@ O objetivo principal é simular a interação de um usuário com uma máquina de
     * [Com Docker Compose](#com-docker-compose)
 * [Endpoints da API](#endpoints-da-api)
 * [Desafios e Soluções](#desafios-e-soluções)
-* ## Roadmap Detalhado
+* [Roadmap Detalhado](#roadmap-detalhado)
 * [Autor](#autor)
 
 ## Funcionalidades
@@ -312,7 +308,7 @@ Após configurar o ambiente (passos 1 a 4 acima):
     Se você deseja que o banco de dados seja recriado do zero e o estoque inicial seja populado, apague o arquivo `soda.db` na raiz do projeto antes de iniciar.
     ```bash
     del soda.db  # No Windows
-    rm soda.db   # No macOS/Linux
+    rm soda.db   # On macOS/Linux
     ```
 2.  **Inicie o servidor Uvicorn:**
     ```bash
@@ -360,7 +356,7 @@ A documentação interativa da API (Swagger UI) estará disponível em `http://1
         "quantity": 1
     }
     ```
-* **Exemplo de Resposta (Erro OpenAI - Cota Excedida):**
+* **Example Response (OpenAI Error - Quota Exceeded):**
     ```json
     {
         "detail": "Erro da OpenAI: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: [https://platform.openai.com/docs/guides/error-codes/api-errors](https://platform.openai.com/docs/guides/error-codes/api-errors)."
@@ -391,7 +387,7 @@ A documentação interativa da API (Swagger UI) estará disponível em `http://1
         "message": "Refrigerante 'coke' indisponível ou estoque insuficiente. Temos apenas 5."
     }
     ```
-* **Exemplo de Resposta (Erro OpenAI - Cota Excedida):**
+* **Example Response (OpenAI Error - Quota Exceeded):**
     ```json
     {
         "detail": "Erro da OpenAI: You exceeded your current quota, please please check your plan and billing details. For more information on this error, read the docs: [https://platform.openai.com/docs/guides/error-codes/api-errors](https://platform.openai.com/docs/guides/error-codes/api-errors)."
@@ -405,13 +401,9 @@ Um dos principais desafios durante o desenvolvimento foi a integração robusta 
 * **Importar `OpenAIError`:** Para capturar especificamente exceções da biblioteca OpenAI.
 * **Tratamento Detalhado:** Implementar blocos `try-except OpenAIError` nas rotas que interagem com a API da OpenAI para extrair e retornar a mensagem de erro detalhada da OpenAI ao cliente da API, melhorando a depuração e a experiência do usuário. Isso garante que, mesmo sem créditos, o usuário receba uma mensagem clara sobre o problema.
 
-### **Roadmap para o Projeto da API da Máquina de Refrigerantes**
+## Roadmap Detalhado
 
-#### **Português (PT-BR)**
-
----
-
-## 🚀 Roadmap: Elevando a API da Máquina de Refrigerantes
+Nosso objetivo é transformar a API da Máquina de Refrigerantes em uma solução ainda mais robusta, inteligente e completa. Este roadmap detalha as próximas etapas para aprimorar as funcionalidades existentes e explorar novas possibilidades.
 
 ### 🌟 **Aprimoramentos da Inteligência (IA) e Robustez:**
 
@@ -439,10 +431,8 @@ Um dos principais desafios durante o desenvolvimento foi a integração robusta 
 * **Monitoramento e Logs:** Implementar um sistema de logging robusto e monitoramento para acompanhar o desempenho da API, identificar gargalos e diagnosticar erros rapidamente.
 * **Segurança:** Adicionar autenticação e autorização básicas para endpoints de gerenciamento (ex: para gestão de estoque).
 
----
+## Autor
 
 **Júnior Lira**
 * [LinkedIn](https://www.linkedin.com/in/juniorlirati/)
 * [GitHub](https://github.com/jl-07)
-
-
